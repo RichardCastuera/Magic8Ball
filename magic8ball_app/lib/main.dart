@@ -36,7 +36,12 @@ class _BallState extends State<Ball> {
     return Container(
       alignment: Alignment.center,
       color: Colors.blue,
-      child: Image.asset('images/ball1.png'),
+      child: TextButton(
+          onPressed: () {
+            print('I got clicked.');
+          },
+          child: Image.asset('images/ball1.png'),
+      ),
     );
   }
 }
